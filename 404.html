@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="ml" class="sidebar-visible no-js light">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -85,7 +85,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter1/1_introduction.html"><strong aria-hidden="true">1.</strong> പൈത്തണ്‍ ആമുഖം</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter1/1_1_python_features.html"><strong aria-hidden="true">1.1.</strong> പൈത്തണ്‍ സവിശേഷതകള്‍</a></li><li class="chapter-item expanded "><a href="chapter1/1_2_know_more.html"><strong aria-hidden="true">1.2.</strong> അധിക വിവരങള്‍</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item "><a href="chapter1/1_introduction.html"><strong aria-hidden="true">1.</strong> പൈത്തണ്‍ ആമുഖം</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="chapter1/1_1_python_features.html"><strong aria-hidden="true">1.1.</strong> പൈത്തണ്‍ സവിശേഷതകള്‍</a></li><li class="chapter-item "><a href="chapter1/1_2_python_installation.html"><strong aria-hidden="true">1.2.</strong> പൈത്തണ്‍ ഇന്‍സ്റ്റൊളേഷന്‍</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.1.</strong> ഡ്രാഫ്റ്റ് വിഷ്വല്‍ സ്റ്റുഡിയോ കോഡ് സെറ്റപ്പ്</div></li></ol></li><li class="chapter-item "><a href="chapter1/1_3_run_python.html"><strong aria-hidden="true">1.3.</strong> പ്രോഗ്രാം റണ്‍ ചെയ്യുന്നതെങ്ങനെ?</a></li><li class="chapter-item "><a href="chapter1/1_4_basic_terminology.html"><strong aria-hidden="true">1.4.</strong> പ്രോഗ്രാമ്മിങ്: അടിസ്ഥാന പദസംഹിത</a></li><li class="chapter-item "><a href="chapter1/know_more.html"><strong aria-hidden="true">1.5.</strong> അധിക വായനയ്ക്ക്</a></li><li class="spacer"></li></ol></li><li class="chapter-item "><a href="misc/valkkashnam.html">വാല്‍ക്കഷ്ണം</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -166,6 +166,20 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html lang="ml" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>പൈത്തണ്‍ ഇന്‍സ്റ്റൊളേഷന്‍ - പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../style.css">
+
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../chapter1/1_introduction.html"><strong aria-hidden="true">1.</strong> പൈത്തണ്‍ ആമുഖം</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../chapter1/1_1_python_features.html"><strong aria-hidden="true">1.1.</strong> പൈത്തണ്‍ സവിശേഷതകള്‍</a></li><li class="chapter-item expanded "><a href="../chapter1/1_2_python_installation.html" class="active"><strong aria-hidden="true">1.2.</strong> പൈത്തണ്‍ ഇന്‍സ്റ്റൊളേഷന്‍</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.1.</strong> ഡ്രാഫ്റ്റ് വിഷ്വല്‍ സ്റ്റുഡിയോ കോഡ് സെറ്റപ്പ്</div></li></ol></li><li class="chapter-item "><a href="../chapter1/1_3_run_python.html"><strong aria-hidden="true">1.3.</strong> പ്രോഗ്രാം റണ്‍ ചെയ്യുന്നതെങ്ങനെ?</a></li><li class="chapter-item "><a href="../chapter1/1_4_basic_terminology.html"><strong aria-hidden="true">1.4.</strong> പ്രോഗ്രാമ്മിങ്: അടിസ്ഥാന പദസംഹിത</a></li><li class="chapter-item "><a href="../chapter1/know_more.html"><strong aria-hidden="true">1.5.</strong> അധിക വായനയ്ക്ക്</a></li><li class="spacer"></li></ol></li><li class="chapter-item "><a href="../misc/valkkashnam.html">വാല്‍ക്കഷ്ണം</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="പൈതതണ-3-ഇനസററൊളേഷന"><a class="header" href="#പൈതതണ-3-ഇനസററൊളേഷന">പൈത്തണ്‍ 3 ഇന്‍സ്റ്റൊളേഷന്‍</a></h2>
+<h3 id="വിനഡോസ"><a class="header" href="#വിനഡോസ">വിന്‍ഡോസ്</a></h3>
+<p>വിന്‍ഡോസ് മെഷീനുകളില്‍ പൈത്തണ്‍ ഇന്‍സ്റ്റൊള്‍ ചെയ്യാന്‍ വളരെ എളുപ്പമാണ്. പൈത്തന്റെ <a href="https://www.python.org/">ഒഫീഷ്യല്‍ വെബ്സൈറ്റ്</a> സന്ദര്‍ശിക്കുക. ഡൌണ്‍ലോഡ്സ് (Downloads) എന്ന മെനുവില്‍ മൌസ് ഹോവര്‍ ചെയ്യുക. നിങ്ങള്‍ക്ക് അവിടെ നിന്നും ഏറ്റവും പുതിയ പൈത്തണ്‍ വേര്‍ഷന്‍ ഡൌണ്‍ലോഡ് ചെയ്യാവുന്നതാണ്. നിങ്ങള്‍ക്ക് പഴയ പൈത്തണ്‍ വേര്‍ഷന്‍ ആണ് വേണ്ടത് എങ്കില്‍ <a href="https://www.python.org/downloads/">View the full list of downloads</a> എന്ന കണ്ണിയില്‍ ക്ലിക്ക് ചെയ്യുക.
+<img src="../images/chapter_1/installation.png" alt="പൈത്തണ്‍ ഡൌണ്‍ലോഡ് 1" /></p>
+<p>ഇപ്പോള്‍ നിങ്ങള്‍ <a href="https://www.python.org/downloads">https://www.python.org/downloads</a> എന്ന വെബ് പേജിലേക്ക് നീങ്ങുന്നതാണ്. അവിടെ നിന്നും നിങ്ങള്‍ക്ക് പൈത്തണ്‍ എക്സിക്യൂട്ടബിള്‍ ഡൌണ്‍ലോഡ് ചെയ്യാവുന്നതാണ്.</p>
+<ol>
+<li>പൈത്തണ്‍ എക്സിക്യൂട്ടബിള്‍ ഡൌണ്‍ലോഡ് ചെയ്തതിന് ശേഷം ഡൌണ്‍ലോഡ്സില്‍ ഉള്ള പൈത്തണ്‍ എക്സിക്യൂട്ടബിള്‍ ഫയലില്‍ ഡബിള്‍ ക്ലിക്ക് ചെയ്യുക.
+<img src="../images/chapter_1/python_icon.png" alt="പൈത്തണ്‍ എക്സിക്യൂട്ടബിള്‍ ഫയല്‍" /></li>
+<li>അപ്പോള്‍ തുറന്നു വരുന്ന റണ്‍ ഡയലോഗ് ബോക്സിലെ റണ്‍ ബട്ടണില്‍ ക്ലിക്ക് ചെയ്യുക
+<img src="../images/chapter_1/python_run.png" alt="റണ്‍ ഡയലോഗ് ബോക്സ്" /></li>
+<li>അടുത്തതായി തുറന്നുവരുന്ന ഇന്‍സ്റ്റൊളേഷന്‍ സെറ്റപ്പ് വിസാര്‍ഡില്‍ <code>Add Python to PATH</code> എന്നുള്ള ചെക്ബോക്സ് ചെക്ക് ചെയ്യുക. അതിനുശേഷം മാത്രം Install Now ക്ലിക്ക് ചെയ്യുക.
+<img src="../images/chapter_1/python_install.png" alt="പൈത്തണ്‍ ഇന്‍സ്റ്റോള്‍" /></li>
+<li>ഇന്‍സ്റ്റോളേഷന് ശേഷം കമാന്‍ഡ് പ്രോംപ്റ്റ് തുറക്കുക. അതിന് ശേഷം ചുവടെയുള്ള കമാന്‍ഡ് അടിക്കുക:</li>
+</ol>
+<pre><code>python --version
+</code></pre>
+<p>നിങ്ങള്‍ക്ക് ലഭിക്കുന്ന ഔട്ട്പുട്ട് ചുവടെ കാണുന്ന രീതിയില്‍ നിങ്ങള്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്ത വേര്‍ഷന്‍ ആണെങ്കില്‍ പൈത്തണ്‍ നിങ്ങളുടെ സിസ്റ്റത്തില്‍ വിജയകരമായി ഇന്‍സ്റ്റോള്‍ ആയിട്ടുണ്ട്.</p>
+<pre><code>Python 3.9.2
+</code></pre>
+<h3 id="ലിനകസ-ഡിസടരിബയൂഷന"><a class="header" href="#ലിനകസ-ഡിസടരിബയൂഷന">ലിനക്സ് ഡിസ്ട്രിബ്യൂഷന്‍</a></h3>
+<p>മിക്കവാറും ലിനക്സ് ഡിസ്ട്രിബ്യൂഷനുകളില്‍ പൈത്തണ്‍ 2-ഉം പൈത്തണ്‍ 3-യും പ്രീഇന്‍സ്റ്റൊള്‍ഡ് ആയിരിയ്ക്കും. നിങ്ങളുടെ സിസ്റ്റത്തില്‍ പൈത്തണ്‍ 3 ഇന്‍സ്റ്റോള്‍ ചെയ്തിട്ടുണ്ട് എന്ന് ഉറപ്പ് വരുത്താനായി</p>
+<pre><code>python3 --version
+</code></pre>
+<p>എന്ന കമാന്‍ഡ് ഉപയോഗിക്കുക. നിങ്ങളുടെ സിസ്റ്റത്തില്‍ ഇന്‍സ്റ്റോള്‍ ആയിരിക്കുന്ന പൈത്തണ്‍ വേര്‍ഷന്‍ ചുവടെയുള്ളത് പോലെ കാണാന്‍ ആകുന്നുണ്ട് എങ്കില്‍ പൈത്തണ്‍ സിസ്റ്റത്തില്‍ മുന്നേ ഇന്‍സ്റ്റോള്‍ ചെയ്തതാണ്.</p>
+<pre><code>Python 3.9.2
+</code></pre>
+<p><strong><code>python --vesion</code> എന്ന കമാന്‍ഡ് വിന്‍ഡോസ് സിസ്റ്റത്തില്‍ ഉപയോഗിച്ചതിന് പകരം ഇവിടെ <code>python3 --vesion</code> എന്ന കമാന്‍ഡ് ഉപയോഗിക്കാനുള്ള കാരണം ലിനക്സ് ഡിസ്ട്രിബ്യൂഷനുകളില്‍ പൈത്തണ്‍ 2-ഉം ചിലപ്പോള്‍ ഇന്‍സ്റ്റോള്‍ പ്രീ ഇന്‍സ്റ്റോള്‍ ആയിരിക്കാനുള്ള സാധ്യത ഉണ്ട്. അതിനാല്‍ തന്നെ <code>python</code> എന്ന കമാന്‍ഡ് പൈത്തണ്‍ 2-വിനെയും <code>python3</code> എന്നത് പൈത്തണ്‍ 3-നെയുമാണ് സൂചിപ്പിക്കുന്നത്.</strong></p>
+<blockquote>
+<p>ലിനക്സ് ഡിസ്ട്രിബ്യൂഷനുകളില്‍ <code>python 3</code>-യ്ക്കു <code>python</code> എന്ന മറ്റൊരു പേര് കമാന്‍ഡ് ലൈനില്‍ ഉപയോഗിക്കാനായി ബാഷ് പ്രൊഫൈലില്‍ (.bashrc ഫയലില്‍) എലിയാസ് (alias) അഥവാ മറ്റൊരു പേര്‍ നിര്‍മിക്കണം. അത് ചര്‍ച്ചയ്ക്ക് പുറത്തുള്ള കാര്യമായതിനാല്‍ നിങ്ങള്‍ സ്റ്റാക്ക് ഒവേര്‍ഫ്ലോയിലെ <a href="https://stackoverflow.com/questions/35435517/creating-an-alias-for-python3">ചോദ്യവും ഉത്തരവും</a> പരിശോധിയ്ക്കുക.</p>
+</blockquote>
+<p>എന്നാല്‍ മറ്റൊരു ഔട്ട്പുട്ട് ആണ് ഈ കമാന്‍ഡ് നല്‍കുന്നത് എങ്കില്‍ നിങ്ങള്‍ക്ക്</p>
+<pre><code>sudo apt-get install python3.x
+</code></pre>
+<p>എന്ന കമാന്‍ഡ് ഉപയോഗിച്ച് പൈത്തണ്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യാം. **ഇവിടെ 3.x-ലെ x പ്രതിനിധീകരിക്കുന്നത് പൈത്തണ്‍ മേജര്‍ വേര്‍ഷന്‍ ആണെന്ന് ഓര്‍ക്കുക. ഉദാഹരണാമായി:</p>
+<pre><code>sudo apt-get install python3.8
+</code></pre>
+<h2 id="മാക"><a class="header" href="#മാക">മാക്</a></h2>
+<p>ക്ഷമിയ്ക്കുക, ഞാന്‍ ഇതേ വരെ മാക് സിസ്റ്റം ഉപയോഗിച്ചിട്ടില്ല. ഉപയോഗിച്ചിട്ടുള്ളവര്‍ക്ക് ഇന്‍സ്റ്റോള്‍ ചെയ്യേണ്ടത് എങ്ങനെയെന്ന് പറയാം. നിങ്ങള്‍ക്കും ഈ എഴുത്ത് പൂര്‍ണമാക്കാന്‍ സഹകരിക്കാവുന്നതാണ്.</p>
+<h3 id="ഓരതത-വെകകാന"><a class="header" href="#ഓരതത-വെകകാന">ഓര്‍ത്ത് വെക്കാന്‍</a></h3>
+<blockquote>
+<p>പൈത്തന്റെ ഒഫീഷ്യല്‍ വെബ്സൈറ്റില്‍ നിന്നും ഡൌണ്‍ലോഡ് ചെയ്യുന്ന ഈയൊരു പൈത്തണ്‍ സി പ്രോഗ്രാമ്മിങ് ഭാഷ ഉപയോഗിച്ച് നിര്‍മിച്ചതാണ്. ഇത് സി പൈത്തണ്‍ (CPython) എന്നാണ് അറിയപ്പെടുന്നത്. ഇതേപ്പോലെ തന്നെ മറ്റ് പ്രോഗ്രാമ്മിങ് ഭാഷകള്‍ ഉപയോഗിച്ച് നിര്‍മിച്ചിരിക്കുന്ന പൈത്തണ്‍ ഇംപ്ലിമെന്‍റേഷനുകള്‍ ഏതൊക്കെയാണെന്ന് താഴെ പട്ടികപ്പെടുത്തിയിട്ടുണ്ട്.</p>
+</blockquote>
+<table><thead><tr><th align="center">പ്രോഗ്രാമ്മിങ് ഭാഷ</th><th align="center">പൈത്തണ്‍ ഇംപ്ലിമെന്‍റേഷന്‍</th></tr></thead><tbody>
+<tr><td align="center">സി</td><td align="center">സി പൈത്തണ്‍ (CPython)</td></tr>
+<tr><td align="center">ജാവ</td><td align="center">ജെ പൈത്തണ്‍ (JPython)</td></tr>
+<tr><td align="center">സി#</td><td align="center">അയണ്‍ പൈത്തണ്‍ (Iron Python)</td></tr>
+<tr><td align="center">റസ്റ്റ്</td><td align="center">റസ്റ്റ് പൈത്തണ്‍ (Rust Python)</td></tr>
+</tbody></table>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter1/1_1_python_features.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../chapter1/1_3_run_python.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter1/1_1_python_features.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../chapter1/1_3_run_python.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

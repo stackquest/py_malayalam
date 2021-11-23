@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html lang="ml" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>അധിക വായനയ്ക്ക് - പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../style.css">
+
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../chapter1/1_introduction.html"><strong aria-hidden="true">1.</strong> പൈത്തണ്‍ ആമുഖം</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../chapter1/1_1_python_features.html"><strong aria-hidden="true">1.1.</strong> പൈത്തണ്‍ സവിശേഷതകള്‍</a></li><li class="chapter-item "><a href="../chapter1/1_2_python_installation.html"><strong aria-hidden="true">1.2.</strong> പൈത്തണ്‍ ഇന്‍സ്റ്റൊളേഷന്‍</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.1.</strong> ഡ്രാഫ്റ്റ് വിഷ്വല്‍ സ്റ്റുഡിയോ കോഡ് സെറ്റപ്പ്</div></li></ol></li><li class="chapter-item "><a href="../chapter1/1_3_run_python.html"><strong aria-hidden="true">1.3.</strong> പ്രോഗ്രാം റണ്‍ ചെയ്യുന്നതെങ്ങനെ?</a></li><li class="chapter-item "><a href="../chapter1/1_4_basic_terminology.html"><strong aria-hidden="true">1.4.</strong> പ്രോഗ്രാമ്മിങ്: അടിസ്ഥാന പദസംഹിത</a></li><li class="chapter-item expanded "><a href="../chapter1/know_more.html" class="active"><strong aria-hidden="true">1.5.</strong> അധിക വായനയ്ക്ക്</a></li><li class="spacer"></li></ol></li><li class="chapter-item "><a href="../misc/valkkashnam.html">വാല്‍ക്കഷ്ണം</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="അധിക-വായനകക"><a class="header" href="#അധിക-വായനകക">അധിക വായനക്ക്</a></h2>
+<blockquote>
+<p><strong>പ്രോഗ്രാമ്മിങ് ഭാഷ (Programming Language):</strong> കമ്പ്യൂട്ടറിനെക്കൊണ്ട് നമുക്കാവശ്യമായ പ്രവര്‍ത്തികള്‍ ചെയ്യാനാവശ്യമായ നിര്‍ദേശങ്ങള്‍ പ്രത്യേക വ്യാകരണ നിയമങ്ങള്‍ക്കും പദഘടനയ്ക്കും (syntax) അനുസൃതമായി എഴുതുകയും അതുപയോഗിച്ചു കമ്പ്യൂട്ടറുമായി ആശയ വിനിമയം നടത്തുകയുമാണ് പ്രോഗ്രാമ്മിങ് ഭാഷകള്‍ ചെയ്യുന്നത്.</p>
+</blockquote>
+<blockquote>
+<p><strong>മെഷീന്‍ ഭാഷ (Machine Language):</strong> കംപ്യൂട്ടറിന്റെ പ്രോസസ്സര്‍ വിവരങ്ങള്‍ മനസ്സിലാക്കുകയും വിവരങ്ങള്‍ക്കുമേല്‍ പ്രവര്‍ത്തിക്കുകയും ചെയ്യുന്നത് ദ്വയാങ്ക സംഖ്യാ സമ്പ്രദായം (Binary Number System) അധിഷ്ഠിതമാക്കിയാണ്. അതിനാല്‍ തന്നെ കമ്പ്യൂട്ടര്‍ പ്രവര്‍ത്തിക്കാന്‍ ആവശ്യമായ നിര്‍ദേശങ്ങളും വിവരങ്ങളും ദ്വയാങ്ക സംഖ്യകള്‍ ആയിരിക്കണം. ഇത്തരത്തില്‍ ദ്വയാങ്ക സംഖ്യകള്‍ മാത്രം അടങ്ങിയ നിര്‍ദേശങ്ങളും വിവരങ്ങളും പരസ്പരം മാറിപ്പോകാതെ പ്രവര്‍ത്തിക്കണം എങ്കില്‍ അതിന് പ്രത്യേക നിയമങ്ങള്‍ പാലിക്കണം. ഇത്തരം നിയമങ്ങള്‍ക്ക് അനുസൃതമായി ദ്വയാങ്ക സംഖ്യാ സമ്പ്രദായത്തില്‍ പ്രവര്‍ത്തിക്കുന്ന ഭാഷയാണ് മെഷീന്‍ ഭാഷ.</p>
+</blockquote>
+<blockquote>
+<p><strong>അസ്സംബ്ലി ഭാഷ (Assebly Language):</strong> മുകള്‍പ്പറഞ്ഞ രീതിയില്‍ നിര്‍ദേശങ്ങളും വിവരങ്ങളും ദ്വയാങ്ക സംഖ്യകള്‍ ഉപയോഗിച്ച് കൈകാര്യം ചെയ്യുക എളുപ്പമുള്ള കാര്യമല്ല. അതിനാല്‍ നിര്‍ദേശങ്ങളും വിവരങ്ങളും ഓര്‍മയില്‍ സൂക്ഷിക്കാന്‍ പ്രോഗ്രാമ്മാറിന് ഇംഗ്ലിഷ് പോലുള്ള ഭാഷകളിലെ പദങ്ങളുടെ സഹായം ആവശ്യമാണ്. ഇത്തരത്തില്‍ പദങ്ങളെ ആണ് നെമോണിക്സ് (Mnemonics) എന്ന് പറയുന്നത്. ഈ നേമോണിക്സുകളുടെയും ഹെക്സാഡെസിമല്‍ സംഖ്യകളുടെയും സഹായത്തോടെ മെഷീന്‍ ഭാഷയ്ക്ക് ഒരു പുതിയ മാനം കൈവന്നു. ഇതാണ് അസ്സംബ്ലി ഭാഷ.</p>
+</blockquote>
+<blockquote>
+<p><strong>ഹൈ-ലെവല്‍ പ്രോഗ്രാമ്മിങ് ഭാഷ (High-level Language):</strong> ഹൈ-ലെവല്‍ പ്രോഗ്രാമ്മിങ് ഭാഷ ഇംഗ്ലിഷ് പോലെ തന്നെയുള്ള പദഘടന പ്രോഗ്രാമ്മിന് നല്കുന്നു. അതിനാല്‍ തന്നെ ഇതിന്റെ വ്യാകരണം പ്രോഗ്രാമ്മെറിന് ഓര്‍ത്തിരിക്കാന്‍ പ്രോഗ്രാമറിന് വളരെ എളുപ്പമാണ്.</p>
+</blockquote>
+<blockquote>
+<p><strong>ബൈറ്റ്കോഡ് (Bytecode):</strong> ഹൈ-ലെവല്‍ പ്രോഗ്രാമ്മിങ് ഭാഷയുടെയും മഷീന്‍ ലെവല്‍ പ്രോഗ്രാമ്മിങ് ഭാഷയുടെയും ഇടയിലുള്ള പ്ലാറ്റ്ഫോമിനെ ആശ്രയിക്കാതെ (platform independent) ആയി പ്രവര്‍ത്തിക്കുന്ന കോഡ് ആണ് ബൈറ്റ്കോഡ് (Bytecode)</p>
+</blockquote>
+<h2 id="ടരാനസലേറററുകള-കംപൈലര-ഇനറരപരെടടര-അസസംബലര"><a class="header" href="#ടരാനസലേറററുകള-കംപൈലര-ഇനറരപരെടടര-അസസംബലര">ട്രാന്‍സ്ലേറ്ററുകള്‍ (കംപൈലര്‍, ഇന്റര്‍പ്രെട്ടര്‍, അസ്സംബ്ലര്‍)</a></h2>
+<ul>
+<li>
+<p>നമ്മള്‍ നേരത്തെ പറഞ്ഞിരുന്നു കംപ്യൂട്ടറുകള്‍ക്ക് അഥവാ പ്രോസെസ്സറുകള്‍ക്ക് മനസ്സിലാകുന്നത് ദ്വയാങ്ക സംഖ്യാ സമ്പ്രദായത്തില്‍ അധിഷ്ഠിതമായ മെഷീന്‍ ഭാഷയാണെന്ന്. അതിനാല്‍ തന്നെ ഹൈ-ലെവല്‍ പ്രോഗ്രാമ്മിങ് ഭാഷയില്‍ എഴുതിയ പ്രോഗ്രാം മെഷീന്‍ ഭാഷയിലേക്കും തിരിച്ചും ഡീകോഡ് ചെയ്യുകയും വിവര്‍ത്തനം (Translate) ചെയ്യപ്പെടുകയും വേണം. ഇത് ട്രാന്‍സ്ലേറ്ററുകള്‍ എന്നറിയപ്പെടുന്ന ഒരു പറ്റം പ്രോഗ്രാമ്മുകളുടെ സഹായത്തോടെയാണ് സാധ്യമാകുന്നത്. ട്രാന്‍സ്ലേറ്റര്‍ എന്നതില്‍ കംപൈലര്‍ (Compiler), ഇന്റര്‍പ്രെട്ടര്‍ (Interpreter), Assembler (Assembler) തുടങ്ങിയവയില്‍ ഏതെങ്കിലും ഒന്നാകാം.</p>
+</li>
+<li>
+<p>ഒരു കംപൈലര്‍ ഹൈ-ലെവല്‍ പ്രോഗ്രാമ്മിങ് ഭാഷയില്‍ എഴുതപ്പെട്ട മുഴുവന്‍ പ്രോഗ്രാമ്മിനെയും (സോര്‍സ് കോഡ്) മെഷീന്‍ ഭാഷയായി (ഒബ്ജക്റ്റ് കോഡ്) പ്രോഗ്രാം പ്രവര്‍ത്തനം ആരംഭിക്കുന്നതിന് മുമ്പ് വിവര്‍ത്തനം ചെയ്യുന്നു. ഈയൊരു പ്രക്രിയയാണ് കംപൈല്‍ ചെയ്യുക എന്നതുകൊണ്ട് ഉദ്ദേശിക്കുന്നത്. അതിനാല്‍ തന്നെ സിസ്റ്റത്തില്‍ പ്രോഗ്രാം പ്രവര്‍ത്തനം ആരംഭിക്കുന്നതിന് മുന്നേ തന്നെ പ്രോഗ്രാമ്മിന്റെ ഒബ്ജക്റ്റ് കോഡ് (എക്സിക്യൂട്ടബിള്‍ ഫയല്‍) തയാറായിരിക്കും. കൂടാതെ പ്രോഗ്രാം പ്രവര്‍ത്തിക്കുന്നത് ഈ ഒബ്ജക്റ്റ് കോഡിന്റെ സഹായത്തോടെ ആയിരിയ്ക്കും. കംപൈല്‍ ചെയ്തു കഴിഞ്ഞ ശേഷം ഈ എക്സിക്യൂട്ടബിള്‍ ഫയല്‍ റണ്‍ ചെയ്യാനായി പിന്നീട് കംപൈലറിന്റെ ആവശ്യമില്ല. കൂടാതെ ഈ എക്സിക്യൂട്ടബിള്‍ ഫയല്‍ അതേ സ്വഭാവമുള്ള മറ്റൊരു കംപ്യൂട്ടറിലും പ്രശ്നങ്ങളില്ലാതെ പ്രവര്‍ത്തിക്കും എന്നുള്ളത് മറ്റൊരു മേന്മയാണ്.</p>
+</li>
+<li>
+<p>ഇന്റര്‍പ്രെട്ടര്‍ സോര്‍സ് കോഡ് മുഴുവനായി വായിക്കുന്നതിന് പകരം സോര്‍സ് കോഡിലെ ഓരോ വരികളും വായിക്കുകയും അതിനനുസൃതമായി മെഷീന്‍ കോഡ് നിര്‍മിക്കുകയും ചെയ്യുന്നു. സോര്‍സ് കോഡിലെ ഓരോ വരി വായിക്കുകയും അനുസൃതമായി മെഷീന്‍ കോഡ് നിര്‍മിക്കുകയും ചെയ്യുന്നതിനാല്‍ ഇന്റര്‍പ്രെട്ടറിന്റെ പ്രവര്‍ത്തനം വളരെ വേഗത കുറഞ്ഞതായിരിക്കും. എന്നാല്‍ പുതിയ തലമുറ കംപ്യൂട്ടറുകളിലെ ഹാർഡ്‍വെയർ ഈ വേഗതക്കുറവിനെ പരിഹരിക്കാന്‍ തക്കവിധം കരുത്തുറ്റതാണെന്നതിനാല്‍ ഈ വേഗതക്കുറവ് ഒരു പ്രശ്നമേയല്ല.</p>
+</li>
+<li>
+<p>അസ്സംബ്ലി ഭാഷ ഹൈ-ലെവല്‍ ഭാഷയ്ക്കും മെഷീന്‍ ഭാഷയ്ക്കും എടയിലുള്ള ഒരു പാലമാണ്. ഹാർഡ്‍വെയറിന്റെ നിര്‍മാതാക്കള്‍ തന്നെ രൂപം കൊടുത്തിട്ടുള്ളതിനാല്‍ ഈ പ്രോഗ്രാമ്മിങ് ഭാഷ ഹാർഡ്‍വെയറിനോട് വളരെ അടുത്തു നില്‍ക്കുന്നതും വേഗതയും, ക്ഷമതയുമേറിയതാണ്.
+<img src="./../images/chapter_1/1_translator.drawio.png" alt="ട്രാന്‍സ്ലേറ്റര്‍" /></p>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter1/1_4_basic_terminology.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../misc/valkkashnam.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter1/1_4_basic_terminology.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../misc/valkkashnam.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

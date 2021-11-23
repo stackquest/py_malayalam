@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="ml" class="sidebar-visible no-js light">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>അധിക വിവരങള്‍ - പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍</title>
+        <title>പ്രോഗ്രാം റണ്‍ ചെയ്യുന്നതെങ്ങനെ? - പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍</title>
 
 
         <!-- Custom HTML head -->
@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../chapter1/1_introduction.html"><strong aria-hidden="true">1.</strong> പൈത്തണ്‍ ആമുഖം</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter1/1_1_python_features.html"><strong aria-hidden="true">1.1.</strong> പൈത്തണ്‍ സവിശേഷതകള്‍</a></li><li class="chapter-item expanded "><a href="../chapter1/1_2_know_more.html" class="active"><strong aria-hidden="true">1.2.</strong> അധിക വിവരങള്‍</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../chapter1/1_introduction.html"><strong aria-hidden="true">1.</strong> പൈത്തണ്‍ ആമുഖം</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../chapter1/1_1_python_features.html"><strong aria-hidden="true">1.1.</strong> പൈത്തണ്‍ സവിശേഷതകള്‍</a></li><li class="chapter-item "><a href="../chapter1/1_2_python_installation.html"><strong aria-hidden="true">1.2.</strong> പൈത്തണ്‍ ഇന്‍സ്റ്റൊളേഷന്‍</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.1.</strong> ഡ്രാഫ്റ്റ് വിഷ്വല്‍ സ്റ്റുഡിയോ കോഡ് സെറ്റപ്പ്</div></li></ol></li><li class="chapter-item expanded "><a href="../chapter1/1_3_run_python.html" class="active"><strong aria-hidden="true">1.3.</strong> പ്രോഗ്രാം റണ്‍ ചെയ്യുന്നതെങ്ങനെ?</a></li><li class="chapter-item "><a href="../chapter1/1_4_basic_terminology.html"><strong aria-hidden="true">1.4.</strong> പ്രോഗ്രാമ്മിങ്: അടിസ്ഥാന പദസംഹിത</a></li><li class="chapter-item "><a href="../chapter1/know_more.html"><strong aria-hidden="true">1.5.</strong> അധിക വായനയ്ക്ക്</a></li><li class="spacer"></li></ol></li><li class="chapter-item "><a href="../misc/valkkashnam.html">വാല്‍ക്കഷ്ണം</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -145,71 +145,57 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="note"><a class="header" href="#note">[NOTE]</a></h1>
-<ul>
-<li><strong>Compiled Language:</strong> If a programming language is compiled, compiler reads the entire program and creates binary from the entire program. We have to execute this binary in order to get output.</li>
-<li><strong>Interpreted and Interactive:</strong> Python processed at runtime by the interpreter. We need not compile the program before executing it. The Python prommpt interact with the interpreter to interpret the program that you have written. Python has REPL mode
-====</li>
-</ul>
-<p>NOTE: Bytecode is an intermediate code between high-level language and machine level-language that is platform independent.</p>
-<ul>
-<li><strong>Poratable:</strong></li>
-</ul>
-<ul>
-<li>It can be</li>
-</ul>
-<p>.Translators (Compiler, Interpreter and Assembler)
-[%breakable]</p>
-<hr />
-<h1 id="note-1"><a class="header" href="#note-1">[NOTE]</a></h1>
-<ul>
-<li>
-<p>The computer understands only machine languages. So there should be a decoder to translate from high-level to low-level and vice versa. This is done by a sequence of Programs called language processors or Translators. It could be a <strong>compiler, interpreter or assembler</strong>.</p>
-</li>
-<li>
-<p>The <strong>compiler</strong> compiles (translates) the entire program in high-level language (source code) into its machine language (object code) before execution starts. Therefore, the object code will be completely ready, as a binary file (for example exe) in the system prior to execution and these binary file does not require the compiler to run at any time. We can say these binary files are easily portable.</p>
-</li>
-<li>
-<p>The <strong>interpreter</strong> reads each line of source code and then translates into its machine language and then executes. The process of translation will be repeated for each line of the source code according to the program sequence. Here the source code will translated many times, whenever a program segment repeats. Hence <em>more time is required to translation</em> by an interpreter.</p>
-</li>
-<li>
-<p><strong>Assembly language</strong> are bridge between high-level languages and machine language. It has lower level primtives and operations. An assembler translates the assembly language to machine language. The speed, compactness and close association with hardware are the advantages of assembly language.</p>
-</li>
-</ul>
-<p>[ditaa]
-....
-+---------------------+
-| High Level Language |
-+---------------------+
-|
-|  (Compiler/ Interpreter)
-|
-v
-+---------------------+
-|  Assembly Language  |
-+---------------------+
-|
-|  (Assembler)
-|
-v
-+--------------------------+
-|  Machine Level Language  |
-+--------------------------+
-....</p>
-<p>====</p>
-<hr />
-<p>\( \int x dx = \frac{x^2}{2} + C \)</p>
-<p>=== How Python Works?</p>
-<p>image::python_pvm.png[Python PVM]</p>
+                        <h2 id="പൈതതണ-പരോഗരാം-റണ-ചെയയുനനതെങങനെ"><a class="header" href="#പൈതതണ-പരോഗരാം-റണ-ചെയയുനനതെങങനെ">പൈത്തണ്‍ പ്രോഗ്രാം റണ്‍ ചെയ്യുന്നതെങ്ങനെ?</a></h2>
+<h3 id="1-ഇനററാകടീവ-ഇനറരപരെടടര"><a class="header" href="#1-ഇനററാകടീവ-ഇനറരപരെടടര">1. ഇന്ററാക്ടീവ് ഇന്റര്‍പ്രെട്ടര്‍</a></h3>
+<p>ഇന്ററാക്ടീവ് ഇന്റര്‍പ്രെട്ടര്‍ ഉപയോഗിക്കാനായി നിങ്ങള്‍ക്ക് വിന്‍ഡോസില്‍</p>
+<pre><code>python
+</code></pre>
+<p>എന്ന കമാന്‍ഡ് ഉപയോഗിക്കാം. ലിനക്സ് ഡിസ്ട്രിബ്യൂഷനുകളില്‍</p>
+<pre><code>python3
+</code></pre>
+<p>എന്ന കമാന്‍ഡും ഉപയോഗിക്കാവുന്നതാണ്.</p>
+<p>കമാന്‍ഡ് ഉപയോഗിച്ച് കഴിയുമ്പോള്‍ ചുവടെക്കാണുന്ന രീതിയില്‍ ഇന്ററാക്ടീവ് ഇന്റര്‍പ്രെട്ടര്‍ ഓപ്പണ്‍ ആകുന്നതാണ്.</p>
+<pre><code class="language-python">F:\MyPythonBook\PythonPointsToPonder&gt;python
+Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)] on win32
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;
+</code></pre>
+<p>ഈ റൈറ്റ് ആരോ <code>&gt;&gt;&gt;</code> കാണുന്ന സ്ഥലത്തു നിങ്ങള്‍ക്ക് പ്രോഗ്രാം വരി വരിയായി എഴുതാവുന്നതാണ്. ഈ <strong>മൂന്ന് ആരോ</strong>കള്‍ നിങ്ങള്‍ ഇന്ററാക്ടീവ് ഇന്റര്‍പ്രെട്ടറില്‍ ആണെന്ന് സൂചിപ്പിക്കുന്നു. നിങ്ങള്‍ ഇവിടെ പ്രോഗ്രാമ്മിന്റെ ഓരോ വരിയെഴുതി <code>എന്റര്‍</code> കീ അമര്‍ത്തുമ്പോളും ആ ലൈനിന്റെ ഔട്ട്പുട്ട് താഴെത്തന്നെ കാണാനാകും. എന്നാല്‍ ഒരു കോഡ് ബ്ലോക്ക് ആണ് നിങ്ങള്‍ എഴുത്തുന്നത് എങ്കില്‍ ആ ബ്ലോക്ക് തീര്‍ന്നിട്ടില്ല എന്ന് കാട്ടുവാന്‍ ഇന്റര്‍പ്രെട്ടറില്‍ എലിപ്സിസ് അഥവാ <code>...</code> ആണ് ഉപയോഗിക്കുന്നത്.</p>
+<p>ഉദാഹരണമായി</p>
+<pre><code class="language-python">&gt;&gt;&gt; print(&quot;Hello world&quot;)
+Hello world
+</code></pre>
+<p>നിങ്ങള്‍ക്ക് <code>print(&quot;Hello world&quot;)</code> എന്ന സ്റ്റേറ്റ്മെന്റ് റണ്‍ ചെയ്തതിന്റെ ഭാഗമായി <strong>Hello world</strong> എന്ന ഔട്ട്പുട്ട് കാണാവുന്നതാണ്.</p>
+<pre><code class="language-python">&gt;&gt;&gt; a = True
+&gt;&gt;&gt; if a:
+...     print(&quot;Hello&quot;)
+... 
+Hello
+</code></pre>
+<p>മുകളില്‍ <code>if</code> എന്ന കണ്ടീഷണല്‍ ബ്ലോക്ക് തുടങ്ങിയതിന്റെ ഭാഗമായി നിങ്ങള്‍ക്ക് എലിപ്സിസ് (<code>...</code>) കാണാവുന്നതാണ്.</p>
+<h3 id="2-പൈതതണ-സകരിപററ-റണ-ചെയയുനനതെങങനെ"><a class="header" href="#2-പൈതതണ-സകരിപററ-റണ-ചെയയുനനതെങങനെ">2. പൈത്തണ്‍ സ്ക്രിപ്റ്റ് റണ്‍ ചെയ്യുന്നതെങ്ങനെ?</a></h3>
+<ol>
+<li>സ്ക്രിപ്റ്റ് <code>.py</code> എക്സ്റ്റെന്‍ഷനില്‍ ഉള്ള ഫയല്‍ ആയി സേവ് ചെയ്യുക.</li>
+<li>വിന്‍ഡോസ് ആണ് ഉപയോഗിക്കുന്നത് എങ്കില്‍</li>
+</ol>
+<pre><code>python ...path\name_of_script.py
+</code></pre>
+<p>എന്ന  കമാന്‍ഡ് ഉപയോഗിച്ച് സ്ക്രിപ്റ്റ് റണ്‍ ചെയ്യാവുന്നതാണ്.</p>
+<p>മറിച്ച് ലിനക്സ് ആണ് ഉപയോഗിക്കുന്നത് എങ്കില്‍</p>
+<pre><code>python3 .../path/name_of_script.py
+</code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../chapter1/1_1_python_features.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../chapter1/1_2_python_installation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
+                            <a rel="next" href="../chapter1/1_4_basic_terminology.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -217,14 +203,31 @@ v
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../chapter1/1_1_python_features.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../chapter1/1_2_python_installation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
+                    <a rel="next" href="../chapter1/1_4_basic_terminology.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
