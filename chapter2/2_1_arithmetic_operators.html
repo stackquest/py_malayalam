@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html lang="ml" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>അരിത്മെറ്റിക് ഓപ്പറേറ്ററുകള്‍ - പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../style.css">
+
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../chapter1/1_introduction.html"><strong aria-hidden="true">1.</strong> പൈത്തണ്‍ ആമുഖം</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../chapter1/1_1_python_features.html"><strong aria-hidden="true">1.1.</strong> പൈത്തണ്‍ സവിശേഷതകള്‍</a></li><li class="chapter-item "><a href="../chapter1/1_2_python_installation.html"><strong aria-hidden="true">1.2.</strong> പൈത്തണ്‍ ഇന്‍സ്റ്റൊളേഷന്‍</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.1.</strong> ഡ്രാഫ്റ്റ് വിഷ്വല്‍ സ്റ്റുഡിയോ കോഡ് സെറ്റപ്പ്</div></li></ol></li><li class="chapter-item "><a href="../chapter1/1_3_run_python.html"><strong aria-hidden="true">1.3.</strong> പ്രോഗ്രാം റണ്‍ ചെയ്യുന്നതെങ്ങനെ?</a></li><li class="chapter-item "><a href="../chapter1/1_4_basic_terminology.html"><strong aria-hidden="true">1.4.</strong> പ്രോഗ്രാമ്മിങ്: അടിസ്ഥാന പദസംഹിത</a></li><li class="chapter-item "><a href="../chapter1/know_more.html"><strong aria-hidden="true">1.5.</strong> അധിക വായനയ്ക്ക്</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter2/2_introduction.html"><strong aria-hidden="true">2.</strong> ഓപ്പറേറ്ററുകള്‍</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter2/2_1_arithmetic_operators.html" class="active"><strong aria-hidden="true">2.1.</strong> അരിത്മെറ്റിക് ഓപ്പറേറ്ററുകള്‍</a></li><li class="chapter-item "><a href="../chapter2/2_2_comparison_operators.html"><strong aria-hidden="true">2.2.</strong> കംപാരിസണ്‍ ഓപ്പറേറ്ററുകള്‍</a></li><li class="chapter-item "><a href="../chapter2/2_3_assignment_operators.html"><strong aria-hidden="true">2.3.</strong> അസൈന്‍മെന്റ് ഓപ്പറേറ്റര്‍</a></li><li class="chapter-item "><a href="../chapter2/2_4_logical_operators.html"><strong aria-hidden="true">2.4.</strong> ലോജിക്കല്‍ ഓപ്പറേറ്ററുകള്‍</a></li><li class="chapter-item "><a href="../chapter2/2_5_bitwise_operators.html"><strong aria-hidden="true">2.5.</strong> ബിറ്റ്‌വൈസ് ഓപ്പറേറ്ററുകള്‍</a></li><li class="chapter-item "><a href="../chapter2/2_6_membership_operators.html"><strong aria-hidden="true">2.6.</strong> മെമ്പര്‍ഷിപ്പ് ഓപ്പറേറ്ററുകള്‍</a></li><li class="chapter-item "><a href="../chapter2/2_7_identity_operators.html"><strong aria-hidden="true">2.7.</strong> ഐഡന്റിറ്റി ഓപ്പറേറ്ററുകള്‍</a></li><li class="spacer"></li></ol></li><li class="chapter-item "><a href="../misc/valkkashnam.html">വാല്‍ക്കഷ്ണം</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="അരിതമെററിക-ഓപപറേറററുകള-അങകഗണിത-കരിയകള"><a class="header" href="#അരിതമെററിക-ഓപപറേറററുകള-അങകഗണിത-കരിയകള">അരിത്മെറ്റിക് ഓപ്പറേറ്ററുകള്‍/ അങ്കഗണിത ക്രിയകള്‍</a></h2>
+<p>അടിസ്ഥാനപരമായ അരിത്മെറ്റിക് ഓപ്പറേഷനുകള്‍ ചെയ്യുവാനായാണ് അരിത്മെറ്റിക് ഓപ്പറേറ്ററുകള്‍ ഉപയോഗിക്കുന്നത്. അരിത്മെറ്റിക് ഓപ്പറേറ്ററുകള്‍ ചുവടെയുള്ള പട്ടികയില്‍ നല്കിയിരിക്കുന്നു.</p>
+<table><thead><tr><th align="center">ഓപ്പറേറ്റര്‍</th><th align="center">ഓപ്പറേഷന്‍</th><th align="center">വിവരണം</th></tr></thead><tbody>
+<tr><td align="center">+</td><td align="center">സങ്കലനം (Addition)</td><td align="center">ഓപ്പറേറ്ററിന് ഇരു വശത്തുമുള്ള സംഖ്യകള്‍ കൂട്ടുന്നു</td></tr>
+<tr><td align="center">-</td><td align="center">വ്യവകലനം (Subtraction)</td><td align="center">ഓപ്പറേറ്ററിന് ഇരു വശത്തുമുള്ള സംഖ്യകള്‍ കുറയ്ക്കുന്നു</td></tr>
+<tr><td align="center">*</td><td align="center">ഗുണനം (Multiplication)</td><td align="center">ഓപ്പറേറ്ററിന് ഇരു വശത്തുമുള്ള സംഖ്യകള്‍ ഗുണിക്കുന്നു</td></tr>
+<tr><td align="center">/</td><td align="center">ഹരണം (Division)</td><td align="center">ഓപ്പറേറ്ററിന് ഇരു വശത്തുമുള്ള സംഖ്യകള്‍ ഹരിക്കുന്നു</td></tr>
+<tr><td align="center">%</td><td align="center">മോഡുലസ് (Modulus)</td><td align="center">ഓപ്പറേറ്ററിന് ഇരു വശത്തുമുള്ള സംഖ്യകള്‍ ഹരിച്ചതിന് ശേഷം ശിഷ്ടം തിരികെ നല്കുന്നു</td></tr>
+<tr><td align="center">**</td><td align="center">എക്സ്പോണന്‍ഷ്യല്‍ ഓപ്പറേറ്റര്‍</td><td align="center">സംഖ്യയുടെ പവര്‍ കാണുന്നു</td></tr>
+<tr><td align="center">//</td><td align="center">ഫ്ലോര്‍ ഹരണം</td><td align="center">രണ്ടു സംഖ്യകള്‍ ഹരിച്ചതിന് ശേഷം ഹരണഫലത്തിലെ ദശാംശ സ്ഥാനങ്ങള്‍ ഒഴിവാക്കി ഉത്തരം തരുന്നു.</td></tr>
+</tbody></table>
+<h4 id="ഉദാഹരണം"><a class="header" href="#ഉദാഹരണം">ഉദാഹരണം</a></h4>
+<pre><code class="language-python">&gt;&gt;&gt; a = 6
+&gt;&gt;&gt; b = 2
+&gt;&gt;&gt; a + b
+8
+&gt;&gt;&gt; a - b
+4
+&gt;&gt;&gt; a * b
+12
+&gt;&gt;&gt; a / b
+3.0
+&gt;&gt;&gt; a % b
+0
+&gt;&gt;&gt; a // b
+3
+&gt;&gt;&gt; a ** b
+36
+&gt;&gt;&gt;
+</code></pre>
+<blockquote>
+<p>ഇവിടെ <code>a / b</code> അഥവാ <code>6 / 2</code> ചെയ്യുമ്പോള്‍ കിട്ടേണ്ടുന്ന ഉത്തരം മൂന്ന് ആണെങ്കിലും നമുക്ക് ഫ്ലോട്ടിങ് പോയിന്‍റ് നമ്പര്‍ ആയിട്ടാണ് ഔട്ട്പുട്ട് കിട്ടിയത്. അതിന്റെ കാരണം നമ്മള്‍ ഹരണക്രിയ ചെയ്യുമ്പോള്‍ ഫ്ലോട്ടിങ് പോയിന്‍റ് നമ്പര്‍ ഉണ്ടാവാനുള്ള സാധ്യത മുന്നില്‍ക്കണ്ട് പൈത്തണ്‍ </p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter2/2_introduction.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../chapter2/2_2_comparison_operators.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter2/2_introduction.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../chapter2/2_2_comparison_operators.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
