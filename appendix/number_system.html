@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html lang="ml" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>നമ്പര്‍ സിസ്റ്റം - പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../style.css">
+
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../chapter1/1_introduction.html"><strong aria-hidden="true">1.</strong> പൈത്തണ്‍ ആമുഖം</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../chapter1/1_1_python_features.html"><strong aria-hidden="true">1.1.</strong> പൈത്തണ്‍ സവിശേഷതകള്‍</a></li><li class="chapter-item "><a href="../chapter1/1_2_python_installation.html"><strong aria-hidden="true">1.2.</strong> പൈത്തണ്‍ ഇന്‍സ്റ്റൊളേഷന്‍</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.1.</strong> ഡ്രാഫ്റ്റ് വിഷ്വല്‍ സ്റ്റുഡിയോ കോഡ് സെറ്റപ്പ്</div></li></ol></li><li class="chapter-item "><a href="../chapter1/1_3_run_python.html"><strong aria-hidden="true">1.3.</strong> പ്രോഗ്രാം റണ്‍ ചെയ്യുന്നതെങ്ങനെ?</a></li><li class="chapter-item "><a href="../chapter1/1_4_basic_terminology.html"><strong aria-hidden="true">1.4.</strong> പ്രോഗ്രാമ്മിങ്: അടിസ്ഥാന പദസംഹിത</a></li><li class="chapter-item "><a href="../chapter1/know_more.html"><strong aria-hidden="true">1.5.</strong> അധിക വായനയ്ക്ക്</a></li></ol></li><li class="chapter-item "><a href="../chapter2/2_introduction.html"><strong aria-hidden="true">2.</strong> ഓപ്പറേറ്ററുകള്‍</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../chapter2/2_1_arithmetic_operators.html"><strong aria-hidden="true">2.1.</strong> അരിത്മെറ്റിക് ഓപ്പറേറ്ററുകള്‍</a></li><li class="chapter-item "><a href="../chapter2/2_2_comparison_operators.html"><strong aria-hidden="true">2.2.</strong> കംപാരിസണ്‍ ഓപ്പറേറ്ററുകള്‍</a></li><li class="chapter-item "><a href="../chapter2/2_3_assignment_operators.html"><strong aria-hidden="true">2.3.</strong> അസൈന്‍മെന്റ് ഓപ്പറേറ്റര്‍</a></li><li class="chapter-item "><a href="../chapter2/2_4_logical_operators.html"><strong aria-hidden="true">2.4.</strong> ലോജിക്കല്‍ ഓപ്പറേറ്ററുകള്‍</a></li><li class="chapter-item "><a href="../chapter2/2_5_bitwise_operators.html"><strong aria-hidden="true">2.5.</strong> ബിറ്റ്‌വൈസ് ഓപ്പറേറ്ററുകള്‍</a></li><li class="chapter-item "><a href="../chapter2/2_6_membership_operators.html"><strong aria-hidden="true">2.6.</strong> മെമ്പര്‍ഷിപ്പ് ഓപ്പറേറ്ററുകള്‍</a></li><li class="chapter-item "><a href="../chapter2/2_7_identity_operators.html"><strong aria-hidden="true">2.7.</strong> ഐഡന്റിറ്റി ഓപ്പറേറ്ററുകള്‍</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../appendix/introduction.html"><strong aria-hidden="true">3.</strong> അനുബന്ധം</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../appendix/number_system.html" class="active"><strong aria-hidden="true">3.1.</strong> നമ്പര്‍ സിസ്റ്റം</a></li><li class="chapter-item "><a href="../appendix/not_is_not.html"><strong aria-hidden="true">3.2.</strong> ബിറ്റ്‌വൈസ് നോട്ട്</a></li><li class="chapter-item "><div><strong aria-hidden="true">3.3.</strong> ഐ‌ഇ‌ഇ‌ഇ 754 സ്റ്റാന്‍ഡേര്‍ഡ്</div></li><li class="spacer"></li></ol></li><li class="chapter-item "><a href="../misc/valkkashnam.html">വാല്‍ക്കഷ്ണം</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="നമപര-സിസററം"><a class="header" href="#നമപര-സിസററം">നമ്പര്‍ സിസ്റ്റം</a></h2>
+<h3 id="ദശാംശ-സംഖയാ-സമപരദായം"><a class="header" href="#ദശാംശ-സംഖയാ-സമപരദായം">ദശാംശ സംഖ്യാ സമ്പ്രദായം</a></h3>
+<p>നമ്മള്‍ സാധാരണ ഗതിയില്‍ പിന്തുടരുന്നത് ദശാംശ സംഖ്യാ സമ്പ്രദായം (Decimal Number System) ആണ്. ദശാംശ സംഖ്യാ സമ്പ്രദായത്തില്‍ 0 മുതല്‍ 9 വരെയുള്ള പത്ത് അക്കങ്ങള്‍ ഉപയോഗിച്ചാണ് എല്ലാ സംഖ്യകളും നിര്‍മിക്കുന്നത്. അതിനാല്‍ തന്നെ ഈയൊരു നമ്പര്‍ സിസ്റ്റം ബേസ് 10 നമ്പര്‍ സിസ്റ്റം ആണെന്ന് പറയാം. ദശാംശ സംഖ്യാ സമ്പ്രദായമുപയോഗിച്ച് ഒരു സംഖ്യ എങ്ങനെ പിരിച്ചെഴുതാം എന്നു നോക്കാം:</p>
+<p>ഉദാഹരണമായി \(59_{10}\) എന്ന നമ്പര്‍ എടുക്കുക. ഇവിടെ 59-ന്റെ അടിയില്‍ 10 എന്ന് എഴുതിയിരിക്കുന്നത് 10-നെ അടിസ്ഥാനമാക്കിയാണ് ഈ നമ്പര്‍ സിസ്റ്റം പ്രവര്‍ത്തിക്കുന്നത് എന്ന് കാട്ടാന്‍ ആണ്.</p>
+<p>$$
+\begin{array}{|c|c|}
+\hline
+10^{1} &amp; 10^{0} \\
+\hline
+5 &amp; 9 \\
+\hline
+\end{array}
+$$</p>
+<p>ഇവിടെ 9 എന്നത് ഒറ്റയുടെ (\(10^{0} = 1)\) സ്ഥാനത്തെ അക്കവും 5 എന്നത് പത്തിന്റെ (\(10^{1} = 10)\) സ്ഥാനത്തെ അക്കവുമാണ്. ഇത് എല്ലാവര്‍ക്കും അറിയാവുന്ന കാര്യമാണ്. ഇത്രയും നിങ്ങള്‍ക്ക് അറിയാമെങ്കില്‍ മറ്റേതൊരു നമ്പര്‍ സിസ്റ്റവും എളുപ്പത്തില്‍ മനസ്സിലാക്കാവുന്നതാണ്.</p>
+<p>അതായത് \(59_{10}\) എന്നത്:</p>
+<p>\[
+\begin{align}
+\def\doubleunderline#1{\underline{\underline{#1}}}
+59_{10} &amp; = 9 \times 10^{0} + 5 \times 10^{1} \\
+&amp; = 9 \times 1 + 5 \times 10 \\
+&amp; = 9 + 50 \\
+&amp; = \doubleunderline{59}
+\end{align}
+\]</p>
+<ul>
+<li>ദശാംശ സംഖ്യാ സമ്പ്രദായത്തില്‍ ഒരു അക്കം ഉപയോഗിച്ച് \(10^{1} - 1 = 9\) വരെയും രണ്ടക്കം ഉപയോഗിച്ച് \(10^{2} - 1= 99\) വരെയും മൂന്നക്കം ഉപയോഗിച്ച് \(10^{3} - 1= 999\) വരെയുമുള്ള സംഖ്യകള്‍ നിര്‍മിക്കാനാകും. അതായത്</li>
+</ul>
+<p>\[
+\bbox[yellow,5px,border:2px solid red]
+{
+10^{N} - 1 = \text{Maximum number.} \text{Where, N} \rightarrow \text{Number of digits} 
+}
+\]</p>
+<h2 id="ബൈനറി-നമപര-സിസററം-ദവയാങക-സംഖയാ-സമപരദായം"><a class="header" href="#ബൈനറി-നമപര-സിസററം-ദവയാങക-സംഖയാ-സമപരദായം">ബൈനറി നമ്പര്‍ സിസ്റ്റം (ദ്വയാങ്ക സംഖ്യാ സമ്പ്രദായം)</a></h2>
+<p>ബൈനറി നമ്പര്‍ സിസ്റ്റം ബേസ് 2 ആയ ഒരു സംഖ്യാ സമ്പ്രദായമാണ്. അതായത് 0, 1 എന്നീ സംഖ്യകള്‍ മാത്രമാണു ഇവിടെ ഉപയോഗിക്കുന്നത്. ദശാംശ സംഖ്യകളും യഥാക്രമത്തിലുള്ള ബൈനറി നമ്പറും താഴെ നല്കിയിരിക്കുന്നത്.</p>
+<table><thead><tr><th align="center">ഡെസിമല്‍ നമ്പര്‍</th><th align="center">ബൈനറി നമ്പര്‍</th></tr></thead><tbody>
+<tr><td align="center">0</td><td align="center">000<bold style="color:green">0</style></td></tr>
+<tr><td align="center">1</td><td align="center">000<bold style="color:green">1</style></td></tr>
+<tr><td align="center">2</td><td align="center">00<bold style="color:green">10</style></td></tr>
+<tr><td align="center">3</td><td align="center">00<bold style="color:green">11</style></td></tr>
+<tr><td align="center">4</td><td align="center">0<bold style="color:green">100</style></td></tr>
+<tr><td align="center">5</td><td align="center">0<bold style="color:green">101</style></td></tr>
+<tr><td align="center">6</td><td align="center">0<bold style="color:green">110</style></td></tr>
+<tr><td align="center">7</td><td align="center">0<bold style="color:green">111</style></td></tr>
+<tr><td align="center">8</td><td align="center"><bold style="color:green">1000</style></td></tr>
+<tr><td align="center">9</td><td align="center"><bold style="color:green">1001</style></td></tr>
+<tr><td align="center">10</td><td align="center"><bold style="color:green">1010</style></td></tr>
+</tbody></table>
+<p>നിങ്ങള്‍ക്ക് മുകളിലെ പട്ടികയില്‍ പച്ച നിറത്തില്‍ നല്കിയിരിക്കുന്ന സംഖ്യകള്‍ തമ്മില്‍ എന്തെങ്കിലും ബന്ധം കണ്ടെത്താനാകുന്നുണ്ടോ? ഇവിടെ ഡെസിമല്‍ നമ്പര്‍ സിസ്റ്റവുമായുള്ള പ്രകടമായ ഒരു ബന്ധം 0 മുതല്‍ ഒന്നും പൂജ്യവും മാത്രം ഉപയോഗിച്ചെഴുതാവുന്ന സംഖ്യകള്‍ ക്രമമായി എഴുതിയതാണ് മുകളിലെ പച്ച നിറത്തിലുള്ള സംഖ്യകള്‍. കൂടാതെ ബൈനറി നമ്പറുകള്‍ എളുപ്പത്തില്‍ ഓര്‍ക്കാന്‍ 2, 4, 8, 16 തുടങ്ങിയ 2-ന്റെ പവര്‍ ആയി വരുന്ന സംഖ്യകളുടെ ബൈനറി നമ്പര്‍ ശ്രദ്ധിച്ചാല്‍ മതി.</p>
+<p>കുറച്ചു കൂടെ ശാസ്ത്രീയമായി ഒരു ബൈനറി നമ്പര്‍ എങ്ങനെ എഴുതാം എന്നു നമുക്ക് നോക്കാം. ഉദാഹരണമായി \(1010_{2}\) എന്ന ബൈനറി നമ്പര്‍ പരിഗണിക്കുക. മുകളിലെ പട്ടികയില്‍ നിന്നും \(1010_{2}\) എന്ന ബൈനറി നമ്പര്‍ ഡെസിമലിലെ \(10_{10}\)-നു തുല്യമാണ്. എന്നാല്‍ \(1010_{2}\)-യെ നമുക്ക് ഡെസിമല്‍ നമ്പര്‍ 10-ന്റെ പവര്‍ ആയി പിരിച്ചെഴുതിയത് പോലെ എങ്ങനെ പിരിച്ചെഴുതാമെന്ന് പരിശോധിക്കാം.</p>
+<p>\[
+\begin{array}{|c|c|c|c|}
+\hline
+2^{3} = 8 &amp; 2^{2} = 4 &amp; 2^{1} = 2 &amp; 2^{0} = 1 \\
+\hline
+1 &amp; 0 &amp; 1 &amp; 0 \\
+\hline
+\end{array}
+\]</p>
+<p>മുകളിലെ പട്ടിക നമുക്ക് ചുവടെക്കാണുന്നത് പോലെ ഗുണിച്ചെഴുതാം. ഉദാഹരണമായി:</p>
+<p>\[
+\def\doubleunderline#1{\underline{\underline{#1}}}
+\begin{align}
+1010_{2} &amp; = 0 \times 2^{0} + 1 \times 2^{1} + 0 \times 2^{2} + 1 \times 2^{3} \\
+&amp; = 0 \times 1 + 1 \times 2 + 0 \times 4 + 1 \times 8 \\
+&amp; = 0 + 2 + 0 + 8 \\
+&amp; =  \doubleunderline{10}
+\end{align}
+\]</p>
+<p>നിങ്ങള്‍ക്ക് അറിയാവുന്ന ഒരു ഡെസിമല്‍ നമ്പറിനെ ബൈനറിയിലേക്ക് മാറ്റണം എങ്കില്‍ അതെങ്ങനെ സാധ്യമാകും. ഉദാഹരണമായി \(10_{10}\) തന്നെ എടുക്കുക.</p>
+<ol>
+<li>ഇവിടെ 10-നെ 2 കൊണ്ട് ഹരിക്കുന്നു. 5 ഫലമായി കിട്ടുന്നു. ശിഷ്ടം 0 ആണ്. ഈയൊരു 0 ആണ് നീല നിറത്തില്‍ നല്കിയിരിക്കുന്നത്.</li>
+<li>5-നെ 2 കൊണ്ട് ഹരിക്കുന്നു. 2 ഫലമായി കിട്ടുന്നു. ശിഷ്ടം 1 ആണ്. ഈ ഒന്നാണ് നീല നിരത്തില്‍ നല്കിയിരിക്കുന്നത്.</li>
+<li>2-നെ 2 കൊണ്ട് വീണ്ടും ഹരിക്കുന്നു. 1 ഫലമായി ലഭിക്കുന്നു. 0 ആണ് ശിഷ്ടം (നീല നിറത്തില്‍).</li>
+<li>ഇനി 2 കൊണ്ടുള്ള ഹരണം മുന്നോട്ട് കൊണ്ട് പോകാനാവില്ല. ബാക്കിയുള്ള 1 ആണ് പച്ച നിറത്തില്‍ നല്കിയിരിക്കുന്നത്.</li>
+<li>ഇനി അവസാനത്തെ ഫലമായ 1-ല്‍ നിന്നും ശിഷ്ടങ്ങളിലൂടെ തിരിച്ചെഴുതുക. അപ്പോള്‍ നിങ്ങള്‍ക്ക് ലഭിക്കുന്ന \(1010_{2}\) ആണ് \(10\)-ന് തുല്യമായ ബൈനറി നമ്പര്‍.</li>
+</ol>
+<p>ഇവിടെ ബൈനറി സംഖ്യയുടെ ബേസ് 2 ആയതിനാല്‍ ആണ് ഹരണം 2 കൊണ്ട് തുടരുന്നത് എന്നു ഓര്‍ക്കുമല്ലോ.</p>
+<p>\[
+\begin{array}{c|rr}
+2 &amp; 10 &amp; \color{blue}{0} \\
+\hline
+2 &amp; 5 &amp; \color{blue}{1} \\
+\hline
+2 &amp; 2 &amp; \color{blue}{0} \\
+\hline
+&amp; \color{green}{1}\uparrow
+\end{array}
+\]</p>
+<h3 id="ഒകടല-സംഖയാ-സമപരദായം"><a class="header" href="#ഒകടല-സംഖയാ-സമപരദായം">ഒക്ടല്‍ സംഖ്യാ സമ്പ്രദായം</a></h3>
+<p>ഒക്ടല്‍ സംഖ്യാ സമ്പ്രദാത്തില്‍ 0 മുതല്‍ 7 വരെയുള്ള സംഖ്യകള്‍ ആണ് അടിസ്ഥാനം. അതായത് ബേസ് 8 സംഖ്യാ സമ്പ്രദായം ആണ് ഒക്ടല്‍ സംഖ്യാ സമ്പ്രദായം. ചുവടെയുള്ള പട്ടികയില്‍ ഡെസിമല്‍ നമ്പരും ഒക്ടല്‍ നമ്പരും യഥാക്രമം നല്കിയിരിക്കുന്നു.</p>
+<table><thead><tr><th align="center">ഡെസിമല്‍ നമ്പര്‍</th><th align="center">ഒക്ടല്‍ നമ്പര്‍</th></tr></thead><tbody>
+<tr><td align="center">0</td><td align="center">0</td></tr>
+<tr><td align="center">1</td><td align="center">1</td></tr>
+<tr><td align="center">2</td><td align="center">2</td></tr>
+<tr><td align="center">3</td><td align="center">3</td></tr>
+<tr><td align="center">4</td><td align="center">4</td></tr>
+<tr><td align="center">5</td><td align="center">5</td></tr>
+<tr><td align="center">6</td><td align="center">6</td></tr>
+<tr><td align="center">7</td><td align="center">7</td></tr>
+<tr><td align="center">8</td><td align="center">10</td></tr>
+<tr><td align="center">9</td><td align="center">11</td></tr>
+<tr><td align="center">10</td><td align="center">12</td></tr>
+<tr><td align="center">11</td><td align="center">13</td></tr>
+<tr><td align="center">12</td><td align="center">14</td></tr>
+<tr><td align="center">13</td><td align="center">15</td></tr>
+<tr><td align="center">14</td><td align="center">16</td></tr>
+<tr><td align="center">15</td><td align="center">17</td></tr>
+<tr><td align="center">16</td><td align="center">20</td></tr>
+<tr><td align="center">\(\dotsm\)</td><td align="center">\(\dotsm\)</td></tr>
+</tbody></table>
+<h3 id="ഹെകസാഡെസിമല-സംഖയാ-സമപരദായം"><a class="header" href="#ഹെകസാഡെസിമല-സംഖയാ-സമപരദായം">ഹെക്സാഡെസിമല്‍ സംഖ്യാ സമ്പ്രദായം</a></h3>
+<p>പരക്കെ ഉപയോഗത്തിലുള്ള ഒരു സംഖ്യാ സമ്പ്രദായമാണ് ഹെക്സാഡെസിമല്‍ സംഖ്യാ സമ്പ്രദായം. 0 മുതല്‍ 9 വരെയുള്ള 10 അക്കങ്ങളും ഇംഗ്ലിഷ് അക്ഷരമാലയിലെ A മുതല്‍ F വരെയുള്ള 6 അക്ഷരങ്ങളും കൂട്ടിച്ചേര്‍താണ് ഈ സംഖ്യാ സമ്പ്രദായം രൂപപ്പെടുത്തിയിരിക്കുന്നത്. അതിനാല്‍ തന്നെ ബേസ് 16 ആയുള്ള സംഖ്യാ സമ്പ്രദായമാണ് ഹെക്സാഡെസിമല്‍ നമ്പര്‍ സിസ്റ്റം ആണ്. ചുവടെയുള്ള പട്ടികയില്‍ ഡെസിമല്‍ നമ്പരും ഹെക്സാഡെസിമല്‍ നമ്പരും യഥാക്രമം നല്കിയിരിക്കുന്നു.</p>
+<table><thead><tr><th align="center">ഡെസിമല്‍ നമ്പര്‍</th><th align="center">ഹെക്സാഡെസിമല്‍ നമ്പര്‍</th></tr></thead><tbody>
+<tr><td align="center">0</td><td align="center">0</td></tr>
+<tr><td align="center">1</td><td align="center">1</td></tr>
+<tr><td align="center">2</td><td align="center">2</td></tr>
+<tr><td align="center">3</td><td align="center">3</td></tr>
+<tr><td align="center">4</td><td align="center">4</td></tr>
+<tr><td align="center">5</td><td align="center">5</td></tr>
+<tr><td align="center">6</td><td align="center">6</td></tr>
+<tr><td align="center">7</td><td align="center">7</td></tr>
+<tr><td align="center">8</td><td align="center">8</td></tr>
+<tr><td align="center">9</td><td align="center">9</td></tr>
+<tr><td align="center">10</td><td align="center">A</td></tr>
+<tr><td align="center">11</td><td align="center">B</td></tr>
+<tr><td align="center">12</td><td align="center">C</td></tr>
+<tr><td align="center">13</td><td align="center">D</td></tr>
+<tr><td align="center">14</td><td align="center">E</td></tr>
+<tr><td align="center">15</td><td align="center">F</td></tr>
+<tr><td align="center">16</td><td align="center">10</td></tr>
+<tr><td align="center">\(\dotsm\)</td><td align="center">\(\dotsm\)</td></tr>
+</tbody></table>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../appendix/introduction.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../appendix/not_is_not.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../appendix/introduction.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../appendix/not_is_not.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
